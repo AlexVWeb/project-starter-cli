@@ -1,0 +1,22 @@
+# Fichiers de logs
+*.log
+
+# Caches et fichiers spécifiques aux éditeurs
+.vscode/
+.idea/
+
+# Node modules
+node_modules/
+
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+# Husky (uniquement si vous avez des fichiers spécifiques que vous ne souhaitez pas partager)
+.husky/*.local
+
+# Exclusion des hooks générés automatiquement si nécessaire
+.husky/_/husky.sh
+
+# Dossier de build
+dist/

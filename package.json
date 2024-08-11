@@ -1,0 +1,34 @@
+{
+  "name": "project-starter-cli",
+  "version": "1.0.0",
+  "main": "dist/bin/index.js",
+  "bin": {
+    "project-starter": "./dist/bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "ts-node bin/index.ts create",
+    "watch": "tsc --watch",
+    "dev": "nodemon --exec ts-node bin/index.ts create",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/fs-extra": "^11.0.4",
+    "execa": "^9.3.0",
+    "husky": "^8.0.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^5.3.8",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^10.1.8",
+    "ora": "^8.0.1"
+  }
+}
