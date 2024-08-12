@@ -1,4 +1,4 @@
-name: TypeScript Check
+name: TypeScript Check and Tests
 
 on:
   push:
@@ -24,3 +24,6 @@ jobs:
 
       - name: Run TypeScript check
         run: npx tsc --noEmit
+
+      - name: Run Jest tests
+        run: npm test

@@ -3,7 +3,7 @@ import {generateFrontend} from '../generators/frontend';
 import {generateBackend} from '../generators/backend';
 import {projectTypeEnum} from '../enums/projectType';
 import chalk from 'chalk';
-import {listTools} from "../services/listTools";  // Assurez-vous que le chemin est correct
+import {listTools} from "../services/listTools";
 
 export async function createProject() {
     console.log(chalk.blue('Starting project creation process...'));
