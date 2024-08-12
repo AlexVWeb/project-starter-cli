@@ -20,3 +20,5 @@ Thumbs.db
 
 # Dossier de build
 dist/
+
+coverage/

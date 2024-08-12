@@ -6,7 +6,7 @@
     "project-starter": "./dist/bin/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "tsc",
     "start": "ts-node bin/index.ts create",
     "watch": "tsc --watch",
@@ -17,9 +17,12 @@
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@types/fs-extra": "^11.0.4",
+    "@types/jest": "^29.5.12",
     "execa": "^9.3.0",
     "husky": "^8.0.0",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.4",
+    "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },
@@ -30,5 +33,10 @@
     "fs-extra": "^11.2.0",
     "inquirer": "^10.1.8",
     "ora": "^8.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
