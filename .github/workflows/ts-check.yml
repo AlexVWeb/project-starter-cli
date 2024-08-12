@@ -27,9 +27,3 @@ jobs:
 
       - name: Run Jest tests
         run: npm test
-
-      - name: Upload coverage to GitHub Actions (optional)
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage
